@@ -1,0 +1,24 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav__brand {
+    font-size: 2.5rem;
+    padding: 40px;
+    margin-left: 60px;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+
+    .nav__item {
+      list-style: none;
+      margin-right: 30px;
+      font-size: 1.75rem;
+    }
+  }
+}

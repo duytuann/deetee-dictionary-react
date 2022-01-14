@@ -1,0 +1,102 @@
+:root {
+    --background-color: #030303;
+    --main-color: #ffffff;
+    --line-color: #4a4a4a;
+    --sub-color: #384c93;
+    --font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* Reset CSS */
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  
+  html {
+    background-color: var(--background-color);
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    color: var(--main-color);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__brand {
+    font-size: 2.5rem;
+    padding: 40px;
+    margin-left: 60px;
+  }
+  
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+  }
+  
+  .nav__item {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1.75rem;
+  }
+  
+  /* word and spelling */
+  .word-spelling-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    align-items: center;
+  }
+  
+  .word {
+    font-size: 13rem;
+    margin-left: 50px;
+  }
+  
+  .spelling {
+    font-size: 3rem;
+    margin-right: 50px;
+    display: flex;
+  }
+  
+  .spelling__item {
+    margin-right: 50px;
+    border-radius: 10rem;
+    padding: 5px 50px;
+    border: 2px solid var(--line-color);
+  }
+  /* Glossaryy */
+  .glossary {
+    display: flex;
+  }
+  
+  .word-type {
+    width: 367px;
+    font-size: 3rem;
+    border: 0.05px solid var(--line-color);
+    border-left: none;
+    padding: 30px 200px 0px 100px;
+  }
+  
+  .glossary__list {
+    width: 100%;
+    font-size: 2rem;
+    border: 0.05px solid var(--line-color);
+    border-right: none;
+  }
+  
