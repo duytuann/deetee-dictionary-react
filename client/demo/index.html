@@ -12,61 +12,58 @@
     />
   </head>
   <body>
-    <header>
-      <a class="nav__brand" href="#">Deetee Dictionary</a>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">Dictionary</a></li>
-        <li class="nav__item"><a href="#">Grammar</a></li>
-        <li class="nav__item"><a href="#">Translate</a></li>
-        <li class="nav__item"><a href="#">SignIn/SignUp</a></li>
-      </ul>
-    </header>
     <section>
-      <div class="word-spelling-container">
-        <div class="word">Love</div>
-        <div class="spelling">
-          <div class="spelling__us spelling__item">
-            <span class="fas fa-headphones"></span> /us/
+      <div class="header--container">
+        <div class="header">
+          <div class="header__left">
+            <a href="/">
+              <img class="nav__brand" src="./assets/logo.png" alt="" />
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Từ điển</a></li>
+              <li class="nav__item"><a href="#">Dịch</a></li>
+              <li class="nav__item"><a href="#">Ngữ pháp</a></li>
+              <li class="nav__item"><a href="#">Từ điển đồng nghĩa</a></li>
+            </ul>
           </div>
-          <div class="spelling__uk spelling__item">
-            <span class="fas fa-headphones"></span> /uk/
+          <div class="header__right">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav__item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav__item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav__item">
+                <i class="fas fa-user"></i><a href="#"> Đăng nhập / Đăng ký</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="glossary-container">
-        <div class="glossary">
-          <div class="word-type">Noun</div>
-          <div class="glossary__list">
-            <ol>
-              <li class="glossary__item">
-                a strong positive emotion of regard and affection
-                <ul>
-                  <li>his love for his work</li>
-                  <li>children need a lot of love</li>
-                </ul>
-              </li>
-              <li class="glossary__item">
-                a strong positive emotion of regard and affection
-                <ul>
-                  <li>his love for his work</li>
-                  <li>children need a lot of love</li>
-                </ul>
-              </li>
-              <li class="glossary__item">
-                a strong positive emotion of regard and affection
-                <ul>
-                  <li>his love for his work</li>
-                  <li>children need a lot of love</li>
-                </ul>
-              </li>
-            </ol>
-            <div class="synonyms">synonyms: room, love,...</div>
+      <div class="search--container">
+        <div class="logo"> 
+          <img class="logo__img" src="./assets/logo.png" alt="" />
+          <div class="slogan">Tạo ý nghĩa cho các từ của bạn</div>
+        </div>
+        <div class="search__bar">
+          <div class="search">
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="Tìm kiếm Tiếng Anh"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
           </div>
         </div>
       </div>
     </section>
   </body>
 </html>
-
