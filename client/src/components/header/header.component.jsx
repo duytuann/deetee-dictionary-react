@@ -1,27 +1,55 @@
 import React from "react";
+import mainLogo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
-import "./header.styles.scss";
+import "./header.styles.css";
 
 const Header = () => (
-  <div className="header">
-    <Link className="nav__brand" to="/">
-      DeeTee Dictionary
-    </Link>
-    <ul className="nav__list">
-      <li className="nav__item">
-        <Link to="dictionary">Dictionary</Link>
-      </li>
-      <li className="nav__item">
-        <Link to="translate">Translate</Link>
-      </li>
-      <li className="nav__item">
-        <Link to="grammar">Grammar</Link>
-      </li>
-      <li className="nav__item">
-        <Link to="/signin-signup">Sing In/Sing up</Link>
-      </li>
-    </ul>
+  <div class="header--container">
+    <div class="header">
+      <div class="header__left">
+        <a href="/">
+          <img class="nav__brand" src={mainLogo} alt="Logo Deetee Dictionary" />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <Link to="#">Từ điển</Link>
+          </li>
+          <li class="nav__item">
+            <Link to="#">Dịch</Link>
+          </li>
+          <li class="nav__item">
+            <Link to="#">Ngữ pháp</Link>
+          </li>
+          <li class="nav__item">
+            <Link to="#">Từ điển đồng nghĩa</Link>
+          </li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <Link to="#">
+              <i class="fab fa-facebook-f"></i>
+            </Link>
+          </li>
+          <li class="nav__item">
+            <Link to="#">
+              <i class="fab fa-instagram"></i>
+            </Link>
+          </li>
+          <li class="nav__item">
+            <Link to="#">
+              <i class="fab fa-twitter"></i>
+            </Link>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-user"></i>
+            <Link to="#"> Đăng nhập / Đăng ký</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 );
 

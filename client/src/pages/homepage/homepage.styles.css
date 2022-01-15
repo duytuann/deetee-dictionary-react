@@ -1,0 +1,22 @@
+/* Search */
+.homepage {
+  display: flex;
+  width: 100%vw;
+  height: 280px;
+  align-items: center;
+  background-image: linear-gradient(to right, #0f193d, #2c2f62, #1a2753);
+}
+
+.logo {
+  margin: 0 100px;
+}
+
+.logo__img {
+  margin: 0 30.5px;
+}
+
+.slogan {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--header--color);
+}

@@ -83,13 +83,19 @@ a {
 }
 
 .logo__img {
-  margin: 0 auto;
+  margin: 0 30.5px;
 }
 
 .slogan {
-  margin: 0 32px;
+  margin: 0 auto;
   font-size: 2rem;
   color: var(--header--color);
+}
+
+
+
+.search__bar {
+  width: 60%;
 }
 
 .search {
@@ -98,13 +104,9 @@ a {
   display: flex;
 }
 
-.search__bar {
-  width: 60%;
-}
-
 .searchTerm {
   width: 90%;
-  border: 3px solid #00b4cc;
+  border: 3px solid #fec400;
   border-right: none;
   padding: 5px;
   height: 45px;
@@ -114,14 +116,15 @@ a {
 }
 
 .searchTerm:focus {
-  color: #00b4cc;
+  color: #000;
+  font-size: 1.6rem;
 }
 
 .searchButton {
   width: 50px;
   height: 45px;
-  border: 1px solid #00b4cc;
-  background: #00b4cc;
+  border: 1px solid #fec400;
+  background: #fec400;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
