@@ -79,7 +79,7 @@ a {
 }
 
 .logo {
-  margin: 0 100px;
+  margin: 0 auto;
 }
 
 .logo__img {
@@ -92,10 +92,8 @@ a {
   color: var(--header--color);
 }
 
-
-
 .search__bar {
-  width: 60%;
+  width: 65%;
 }
 
 .search {
@@ -105,7 +103,7 @@ a {
 }
 
 .searchTerm {
-  width: 90%;
+  width: 70%;
   border: 3px solid #fec400;
   border-right: none;
   padding: 5px;
@@ -130,4 +128,60 @@ a {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+}
+
+/* SVG */
+.pg-hsvg-f1,
+.pg-hsvg-f4 {
+  fill: #ff8029;
+}
+
+.pg-hsvg-f2,
+.pg-hsvg-f7 {
+  fill: #0580e8;
+}
+
+.pg-hsvg-f3,
+.pg-hsvg-f9 {
+  fill: #5d30c1;
+}
+
+.pg-hsvg-f5,
+.pg-hsvg-f8 {
+  fill: #5ce8ff;
+}
+
+.pg-hsvg-f6 {
+  fill: #ffc400;
+}
+
+.pg-hsvg-f10 {
+  fill: #1d2956;
+}
+
+.box__item__1,
+.box__item__2,
+.box__item__3,
+.box__item__4 {
+  position: absolute;
+}
+
+.box__item__1 {
+  top: 50px;
+  left: 0;
+}
+
+.box__item__2 {
+  top: 240px;
+  left: 0;
+}
+
+.box__item__3 {
+  top: 250px;
+  left: calc(100% - 90px);
+}
+
+.box__item__4 {
+  top: 50px;
+  left: 50%;
 }

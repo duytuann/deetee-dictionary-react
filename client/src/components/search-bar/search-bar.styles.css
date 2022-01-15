@@ -1,6 +1,6 @@
 /* Search bar */
 .search__bar {
-  width: 60%;
+  width: 65%;
 }
 
 .search {
@@ -10,7 +10,7 @@
 }
 
 .searchTerm {
-  width: 90%;
+  width: 70%;
   border: 3px solid #fec400;
   border-right: none;
   padding: 5px;
