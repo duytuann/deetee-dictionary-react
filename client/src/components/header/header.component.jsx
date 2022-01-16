@@ -1,6 +1,7 @@
 import React from "react";
 import mainLogo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import "./header.styles.css";
 
@@ -13,7 +14,7 @@ const Header = () => (
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <Link to="#">Từ điển</Link>
+            <Link to="/dictionary">Từ điển</Link>
           </li>
           <li class="nav__item">
             <Link to="#">Dịch</Link>

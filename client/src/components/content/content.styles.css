@@ -1,0 +1,33 @@
+/* Content component */
+.content-container {
+  position: relative;
+  margin: 0 auto 20px auto;
+  color: var(--content--color);
+  padding: 20px;
+  background-color: #ddfaff;
+}
+
+.content-title {
+  margin-bottom: 15px;
+}
+
+.content-content {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.svg_content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 763px) {
+  .content-container {
+    position: relative;
+    margin: 0 auto 20px auto;
+    color: var(--content--color);
+    padding: 20px;
+    background-color: #ddfaff;
+  }
+}

@@ -3,21 +3,32 @@
   width: 65%;
 }
 
+.search__bar__dict {
+  width: 100%;
+}
+
 .search {
   width: 100%;
   position: relative;
   display: flex;
+  height: 40px;
+}
+
+.search_dict {
+  margin: 0 5% 0 25%;
+  width: 70%;
 }
 
 .searchTerm {
   width: 70%;
-  border: 3px solid #fec400;
-  border-right: none;
-  padding: 5px;
-  height: 45px;
-  border-radius: 5px 0 0 5px;
+  padding: 5px 5px 5px 15px;
+  height: 40px;
+  border-radius: 20px;
   outline: none;
   color: #9dbfaf;
+  font-size: 1.7rem;
+  border: none;
+  margin: 5px 0;
 }
 
 .searchTerm:focus {
@@ -27,12 +38,13 @@
 
 .searchButton {
   width: 50px;
-  height: 45px;
+  height: 40px;
   border: 1px solid #fec400;
   background: #fec400;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
+  margin: 0 5px;
 }

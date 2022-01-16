@@ -87,7 +87,7 @@ const HomePage = () => (
         <img className="logo__img" src={mainLogo} alt="Main Logo" />
         <div className="slogan">Make your words meaningful!</div>
       </div>
-      <SearchBar />
+      <SearchBar homepage={true} />
     </div>
   </div>
 );
