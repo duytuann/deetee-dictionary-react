@@ -1,3 +1,11 @@
+*.icon-black {
+  color: black;
+}
+
+*.icon-white {
+  color: white;
+}
+
 /* Search bar */
 .search__bar {
   width: 65%;
@@ -37,7 +45,7 @@
 }
 
 .searchButton {
-  width: 50px;
+  width: 40px;
   height: 40px;
   border: 1px solid #fec400;
   background: #fec400;

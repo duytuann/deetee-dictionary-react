@@ -7,9 +7,6 @@ import "./dictionary.styles.css";
 
 const Dictionary = () => (
   <div>
-    <div className="search-bar-container">
-      <SearchBar homepage={false} />
-    </div>
     <div className="page-content">
       <h1 className="page-content-title">Từ điển</h1>
       <p className="page-content-subtitle">

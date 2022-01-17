@@ -7,7 +7,7 @@ const SearchBar = ({ homepage }) => (
     <div class={homepage ? "search" : "search_dict"}>
       <input type="text" class="searchTerm" placeholder="Tìm kiếm Tiếng Anh" />
       <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search icon-black"></i>
       </button>
     </div>
   </div>

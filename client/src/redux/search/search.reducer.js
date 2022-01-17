@@ -11,6 +11,8 @@ const searchReducer = (state = INITAL_STATE, action) => {
         ...state,
         hidden: !state.hidden,
       };
+    default:
+      return state;
   }
 };
 

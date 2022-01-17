@@ -4,8 +4,8 @@
   height: 50px;
   background-color: var(--background-color);
   color: var(--header--color);
-  border-top: 1px  solid var(--border--color);
-  border-bottom: 1px  solid var(--border--color);
+  border-top: 1px solid var(--border--color);
+  border-bottom: 1px solid var(--border--color);
 }
 
 .header {
@@ -30,7 +30,6 @@
   padding: 0 20px;
   border-right: 1px solid var(--border--color);
   margin-right: 25px;
-
 }
 
 .nav__list {
@@ -43,4 +42,23 @@
   font-size: 1.4rem;
   font-weight: bold;
   margin-right: 25px;
+}
+
+.toggle {
+  height: 30px;
+  width: auto;
+  border-radius: 15px;
+  padding: 6px 10px 8px 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.bgc_c_x {
+  background-color: #616a89;
+  color: white;
+}
+
+.bgc_c_v {
+  background-color: #fec400;
+  color: #292929;
 }

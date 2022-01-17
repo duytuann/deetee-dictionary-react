@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom"; // Redirect
+import { Switch, Route, useLocation } from "react-router-dom"; // Redirect
 
 import "./App.css";
 
@@ -10,7 +10,18 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => <Header {...props} homepage="homepage" />}
+          />
+          <Route
+            exact
+            path="/*"
+            render={(props) => <Header {...props} />}
+          />
+        </Switch>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exatt path="/dictionary" component={Dictionary} />
