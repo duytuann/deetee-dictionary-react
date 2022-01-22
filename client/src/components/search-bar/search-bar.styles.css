@@ -6,6 +6,10 @@
   color: white;
 }
 
+.form-search {
+  width: 100%;
+}
+
 /* Search bar */
 .search__bar {
   width: 65%;

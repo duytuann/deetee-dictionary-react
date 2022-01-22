@@ -64,10 +64,13 @@ const Header = ({ homepage, hidden, dispatch }) => (
                   dispatch(toggleSearchHidden());
                 }}
               >
-                <li className={hidden
-                    ? "nav__item toggle bgc_c_v"
-                    : "nav__item toggle bgc_c_x"}>
-                  
+                <li
+                  className={
+                    hidden
+                      ? "nav__item toggle bgc_c_v"
+                      : "nav__item toggle bgc_c_x"
+                  }
+                >
                   <div className="searchbutton">
                     <i
                       className={

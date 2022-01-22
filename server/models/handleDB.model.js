@@ -78,7 +78,4 @@ const handleDB = (word) => {
   return response;
 };
 
-const love = handleDB("love");
-console.log(love);
-
 export default handleDB;

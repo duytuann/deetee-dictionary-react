@@ -16,15 +16,11 @@ class App extends React.Component {
             path="/"
             render={(props) => <Header {...props} homepage="homepage" />}
           />
-          <Route
-            exact
-            path="/*"
-            render={(props) => <Header {...props} />}
-          />
+          <Route exact path="/*" render={(props) => <Header {...props} />} />
         </Switch>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exatt path="/dictionary" component={Dictionary} />
+          <Route exact path="/dictionary" component={Dictionary} />
         </Switch>
       </div>
     );
