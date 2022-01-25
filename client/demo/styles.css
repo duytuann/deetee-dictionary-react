@@ -3,6 +3,7 @@
   --font-family: Arial, Helvetica, sans-serif;
   --header--color: #fff;
   --border--color: #4a5478;
+  --gloss-color: #1d2a57;
 }
 
 /* Reset CSS */
@@ -184,4 +185,85 @@ a {
 .box__item__4 {
   top: 50px;
   left: 50%;
+}
+
+/* Glossary */
+.word-page {
+  padding: 0 50px;
+  display: flex;
+  width: 100%;
+}
+
+.leftslot {
+  width: 300px;
+}
+
+.rightslot {
+  width: 100%;
+  display: flex;
+}
+
+.glossary-container {
+  width: 100%;
+  display: flex;
+  color: var(--gloss-color);
+  margin: 0 80px;
+}
+
+.gloss {
+  padding: 15px 30px 15px 20px;
+  width: 100%;
+}
+
+.word-heading {
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+.share-word {
+  height: 30px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgb(229, 228, 233);
+  margin-bottom: 5px;
+}
+
+.share-icon {
+  margin-right: 20px;
+}
+
+.share-icon-container {
+  text-align: end;
+}
+
+.word-container {
+  border-bottom: 10px;
+}
+
+.word {
+  font-size: 3.6rem;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.speaker {
+  padding: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.speaker__item {
+  display: flex;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.temp {
+  width: 300px;
+}
+
+/* explain */
+.explain {
+  margin: 10px;
+  border-top: solid 3px #5d2fc1;
 }

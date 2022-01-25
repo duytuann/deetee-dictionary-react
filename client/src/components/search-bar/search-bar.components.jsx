@@ -10,10 +10,9 @@ import "./search-bar.styles.css";
 
 const SearchBar = ({ homepage, word, inputChange }) => {
   const history = useHistory();
-
   const handleSubmit = (event) => {
     event.preventDefault();
-    history.push(`dictionary/${word}`);
+    history.push(`/dictionary/${word}`);
   };
 
   return (

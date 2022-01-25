@@ -1,0 +1,10 @@
+.explain {
+  padding: 10px;
+  border-top: solid 3px #5d2fc1;
+}
+
+.type {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}

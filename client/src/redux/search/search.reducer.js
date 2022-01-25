@@ -3,6 +3,7 @@ import SearchActionTypes from "./search.types";
 const INITAL_STATE = {
   word: "",
   hidden: false,
+  glossary: {},
 };
 
 const searchReducer = (state = INITAL_STATE, action) => {
@@ -16,6 +17,11 @@ const searchReducer = (state = INITAL_STATE, action) => {
       return {
         ...state,
         word: action.payload,
+      };
+    case SearchActionTypes.GET_GLOSSARY:
+      return {
+        ...state,
+        glossary: action.payload,
       };
     default:
       return state;

@@ -1,20 +1,23 @@
 import express from "express";
 import { createServer } from "http";
+import cors from "cors";
+
 import routes from "./routes/index.js";
-
-const app = express();
-
-const http = createServer(app);
 
 // Database
 // import "./config/db.config";
 
 // Middleware
+const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use("/api", routes.homeRouter);
 app.use("/api", routes.dictionaryRouter);
+
+// create Server
+const http = createServer(app);
 
 // server listening
 const PORT = process.env.PORT || 5000;

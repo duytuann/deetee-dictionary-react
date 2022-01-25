@@ -1,0 +1,14 @@
+.word-page {
+  padding: 0 50px;
+  display: flex;
+  width: 100%;
+}
+
+.leftslot {
+  width: 300px;
+}
+
+.rightslot {
+  width: 100%;
+  display: flex;
+}
