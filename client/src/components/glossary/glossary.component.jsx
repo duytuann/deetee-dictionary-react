@@ -1,5 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
+import { selectGlossary } from "../../redux/search/search.selectors";
 import Explain from "../explain/explain.component";
 
 import "./glossary.styles.css";
@@ -39,4 +42,8 @@ const Glossary = ({ word, gloss }) => (
   </div>
 );
 
-export default Glossary;
+const mapStateToProps = createStructuredSelector({
+  gloss: selectGlossary,
+});
+
+export default connect(mapStateToProps)(Glossary);

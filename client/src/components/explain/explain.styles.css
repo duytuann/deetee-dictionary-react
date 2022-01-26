@@ -4,7 +4,13 @@
 }
 
 .type {
-    font-size: 1.6rem;
-    font-style: italic;
-    margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #5d2fc1;
+  font-weight: bold;
+}
+
+.gloss-synset-wrapper {
+  
 }

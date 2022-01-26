@@ -16,7 +16,7 @@ const searchReducer = (state = INITAL_STATE, action) => {
     case SearchActionTypes.INPUT_CHANGE:
       return {
         ...state,
-        word: action.payload,
+        word: action.payload.trim().toLowerCase(),
       };
     case SearchActionTypes.GET_GLOSSARY:
       return {

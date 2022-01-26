@@ -65,7 +65,7 @@ const handleDB = (word) => {
         };
         curr.gloss = id_gloss.get(id);
         for (let obj of wn_synset) {
-          if (obj.synset_id === id) {
+          if (obj.synset_id === id && obj.word !== word) {
             curr.synset.push(obj.word);
           }
         }

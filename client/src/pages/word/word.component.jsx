@@ -15,7 +15,7 @@ const Word = ({ match, gloss }) => {
 
   useEffect(() => {
     dispatch(getGlossary(word));
-  }, []);
+  }, [word]);
 
   return (
     <div className="word-page">
