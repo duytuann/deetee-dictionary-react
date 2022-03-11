@@ -5,9 +5,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "build": "cd client && npm run build",
+    "server": "nodemon server/index.js",
     "dev": "nodemon server/index.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
   },
   "keywords": [],
   "author": "",
