@@ -1,14 +1,22 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react";
+import { connect, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
 
-import { selectWordInput } from "../../redux/search/search.selectors";
-import { inputChange } from "../../redux/search/search.actions";
+import {
+  selectWordInput,
+  selectWordList,
+} from "../../redux/search/search.selectors";
+import { inputChange, getWordList } from "../../redux/search/search.actions";
+// import Autocomplete from "../Autocomplete/autocomplete.component";
 
 import "./search-bar.styles.css";
 
-const SearchBar = ({ homepage, word, inputChange }) => {
+const SearchBar = ({ homepage, word, inputChange, wordList, getWordList }) => {
+  useEffect(() => {
+    getWordList();
+  }, []);
+
   const history = useHistory();
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,6 +37,7 @@ const SearchBar = ({ homepage, word, inputChange }) => {
           <button type="submit" className="searchButton">
             <i className="fa fa-search icon-black"></i>
           </button>
+          {/* <Autocomplete word={word} wordList={wordList} /> */}
         </form>
       </div>
     </div>
@@ -37,10 +46,12 @@ const SearchBar = ({ homepage, word, inputChange }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   inputChange: (event) => dispatch(inputChange(event)),
+  getWordList: () => dispatch(getWordList()),
 });
 
 const mapStateToProps = createStructuredSelector({
   word: selectWordInput,
+  wordList: selectWordList,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

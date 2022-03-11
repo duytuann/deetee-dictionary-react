@@ -4,6 +4,7 @@ const INITAL_STATE = {
   word: "",
   hidden: false,
   glossary: {},
+  wordList: [],
 };
 
 const searchReducer = (state = INITAL_STATE, action) => {
@@ -22,6 +23,11 @@ const searchReducer = (state = INITAL_STATE, action) => {
       return {
         ...state,
         glossary: action.payload,
+      };
+    case SearchActionTypes.GET_WORD_LIST:
+      return {
+        ...state,
+        wordList: action.payload,
       };
     default:
       return state;

@@ -12,7 +12,7 @@ import "./word.styles.css";
 const Word = ({ match, gloss }) => {
   const word = match.params.word;
   const dispatch = useDispatch();
-
+  
   useEffect(() => {
     dispatch(getGlossary(word));
   }, [word]);
@@ -30,4 +30,5 @@ const Word = ({ match, gloss }) => {
 const mapStateToProps = createStructuredSelector({
   gloss: selectGlossary,
 });
+
 export default connect(mapStateToProps)(Word);

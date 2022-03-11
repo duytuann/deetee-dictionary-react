@@ -16,12 +16,16 @@
 }
 
 .ex {
-    font-size: 1.7rem;
-    font-style: italic;
-    margin-bottom: 10px;
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .synset {
   font-size: 1.6rem;
   padding-bottom: 10px;
-} 
+}
+
+.hv:hover {
+  text-decoration: underline;
+}

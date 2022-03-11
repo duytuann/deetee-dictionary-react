@@ -22,3 +22,16 @@ export const getGlossary = (word) => async (dispatch) => {
     console.log(error);
   }
 };
+
+export const getWordList = () => async (dispatch) => {
+  try {
+    const response = await getAPI("wordlist");
+
+    dispatch({
+      type: SearchActionTypes.GET_WORD_LIST,
+      payload: response.data,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};

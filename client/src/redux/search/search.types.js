@@ -2,6 +2,7 @@ const SearchActionTypes = {
   TOGGLE_SEARCH_HIDDEN: "TOGGLE_SEARCH_HIDDEN",
   INPUT_CHANGE: "INPUT_CHANGE",
   GET_GLOSSARY: "GET_GLOSSARY",
+  GET_WORD_LIST: "GET_WORD_LIST",
 };
 
 export default SearchActionTypes;

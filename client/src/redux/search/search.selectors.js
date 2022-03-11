@@ -16,3 +16,8 @@ export const selectGlossary = createSelector(
   [selectSearch],
   (search) => search.glossary
 );
+
+export const selectWordList = createSelector(
+  [selectSearch],
+  (search) => search.wordList
+);

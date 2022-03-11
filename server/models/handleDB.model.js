@@ -78,3 +78,5 @@ const handleDB = (word) => {
 };
 
 export default handleDB;
+
+export { word_list };
