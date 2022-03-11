@@ -13,7 +13,6 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/api", routes.homeRouter);
 app.use("/api", routes.dictionaryRouter);
 
 // create Server
